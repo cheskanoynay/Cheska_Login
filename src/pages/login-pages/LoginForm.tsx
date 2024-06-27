@@ -4,20 +4,28 @@ import MainButton from "../../components/buttons/PrimaryButton";
 import "./LoginForm.scss";
 import Logo from "../../assets/logo.png";
 
-function LoginForm() {
+const LoginForm: React.FC = () => {
   return (
     <div className="login-form-container">
       <div className="left-container"></div>
       <div className="right-container">
         <img src={Logo} alt="logo" className="logo" />
         <div className="input-container">
-          <InputField placeholder="Username" type="text" />
-          <InputField placeholder="Password" type="password" />
+          <div className="input-field">
+            <label htmlFor="username">Username</label>
+            <InputField placeholder="" type="text" />
+          </div>
+          <br></br>
+          <br></br>
+          <div className="input-field">
+            <label htmlFor="password">Password</label>
+            <InputField placeholder="" type="password" />
+          </div>
         </div>
         <MainButton buttonText="LOGIN" />
       </div>
     </div>
   );
-}
+};
 
 export default LoginForm;
