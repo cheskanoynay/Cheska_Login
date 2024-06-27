@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
+import "./InputField.scss";
 
 interface InputFieldProps {
   placeholder: string;
   type: string;
 }
-
 
 function InputField({ placeholder, type }: InputFieldProps) {
   return (
@@ -16,4 +16,3 @@ function InputField({ placeholder, type }: InputFieldProps) {
 }
 
 export default InputField;
-

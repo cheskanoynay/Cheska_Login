@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import "./PrimaryButton.scss";
 
 interface MainButtonProps {
   buttonText: string;
