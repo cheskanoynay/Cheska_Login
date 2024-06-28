@@ -1,20 +1,22 @@
 import React from "react";
 import "./PrimaryButton.scss";
 
-interface MainButtonProps {
+interface PrimaryButtonProps {
   buttonText: string;
+  handleButtonClick: () => void;
 }
 
-function MainButton({ buttonText }: MainButtonProps) {
-  const handleButtonClick = () => {
-    console.log("CLICKED!");
-  };
-
+const PrimaryButton: React.FC<PrimaryButtonProps> = ({
+  buttonText,
+  handleButtonClick,
+}) => {
   return (
     <div>
-      <button onClick={handleButtonClick}>{buttonText}</button>
+      <button className="primary-button" onClick={handleButtonClick}>
+        {buttonText}
+      </button>
     </div>
   );
-}
+};
 
-export default MainButton;
+export default PrimaryButton;

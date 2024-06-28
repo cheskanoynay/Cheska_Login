@@ -1,16 +1,29 @@
-button {
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;700&family=Montserrat:wght@400;700&display=swap");
+
+.primary-button {
   width: 185px;
   height: 53px;
   padding: 10px 20px;
-  margin-top: 50px;
+  margin-top: 35px;
   border: none;
   border-radius: 20px;
   background-color: #c69366;
   color: white;
   cursor: pointer;
   transition: background-color 0.3s;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: larger;
 
   &:hover {
     background-color: #896444;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    background-color: #4e2f19;
   }
 }
